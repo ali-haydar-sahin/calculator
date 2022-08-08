@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttonRow">
+
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="Widget.App.CalculateButtonNumber" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.NumberButtonTheme</item>
+        <item name="android:onClick">numberButton</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">25sp</item>
+        <item name="rippleColor">@color/secondaryTextColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="Widget.App.CalculateButtonOperator" parent="Widget.MaterialComponents.Button">
+        <item name="android:onClick">operatorButton</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.OperatorButtonTheme</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+
+    </style>
+
+    <style name="ThemeOverlay.App.Button.NumberButtonTheme" parent="">
+        <item name="colorPrimary">@color/secondaryColor</item>
+        <item name="backgroundTint">@null</item>
+        <item name="background">@drawable/number_button_background_state</item>
+    </style>
+    <style name="ThemeOverlay.App.Button.OperatorButtonTheme" parent="">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="backgroundTint">@color/primaryTextColor</item>
+        <item name="background">@drawable/operator_button_background_state</item>
+    </style>
+
+
+</resources>
